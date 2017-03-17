@@ -1,6 +1,6 @@
 WinSCP-Uploader.vim
 ===================
-WinSCP-Uploader.vim Version 0.1.0
+WinSCP-Uploader.vim Version 0.1.1
 ----------------------
 
 About
@@ -18,7 +18,7 @@ git clone https://github.com/kazaih/winscp-uploader.vim
 
 Usage
 -----
-    <leader>wsup
+> Command :  `<C-U>`
 
 Configuration
 -----
@@ -63,13 +63,6 @@ Configuration
       * Default: `c:/Program Files (x86)/winscp/`
 
   WinSCPインストール先ディレクトリ設定です。
-
-Key mapping
------------
-例）
-
-Ctrl+u  
-    `nnoremap <C-U> <ESC>:call WinSCPUpload() <CR>`
 
 
 License

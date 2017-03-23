@@ -1,6 +1,6 @@
 WinSCP-Uploader.vim
 ===================
-WinSCP-Uploader.vim Version 0.1.1
+WinSCP-Uploader.vim Version 0.1.2
 ----------------------
 
 About

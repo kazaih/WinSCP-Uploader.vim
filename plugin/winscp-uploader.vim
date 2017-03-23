@@ -1,6 +1,6 @@
 " ==================================================================================
 " Author:   Kazutaka Aihara(b18c98specr@gmail.com)
-" Version:  0.1.1
+" Version:  0.1.2
 " URL:      https://github.com/kazaih/winscp-uploader
 "
 " Copyright (c) 2017 Kazutaka Aihara
@@ -100,7 +100,7 @@ function! WinSCPUpload()
 	endif
 
 	let local_transfer_file  = substitute(target_config['local_path'],"\\","/","g") . target_relative_file
-	let remote_received_path = target_config['remote_path'] . target_relative_file
+	let remote_received_path = target_config['remote_path'] . substitute(target_relative_file,expand("%"),"","g")
 
 	if current_file_path != local_transfer_file
 		echo "Error : The current file and transfer file are different."
